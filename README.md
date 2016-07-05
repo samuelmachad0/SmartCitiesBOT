@@ -1,9 +1,4 @@
-spark-heroku
+SmartCities Telegram BOT
 ============
 
-Spark Heroku skeleton
-
-To deploy your app
-
-	heroku apps:create [your_app_name]
-	git push heroku master
+Projeto de trabalho de graduação sobre Internet das Coisas na FATEC São José dos Campos.
