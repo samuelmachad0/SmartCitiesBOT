@@ -13,7 +13,7 @@ public class Controller {
     Model model = new Model();
     JSONObject body;
 
-    protected void send(String text, String chatId){model.sendMessage(chatId,text);
+    protected void send(String text, String chatId){model.sendMessage(text,chatId);
     }
 
     protected void read(byte[] bodyRequest){
