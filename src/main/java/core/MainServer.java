@@ -22,11 +22,19 @@ public class MainServer {
 
 		// Index
 		get("/", (req, res) -> {
-            return "www.telegram.me/smartcitiesbot";
+            return "Talk to me www.telegram.me/smartcitiesbot";
         });
+
+        //Data is sent by telegram API on this route
+        post("/readMessages", (req, res) -> {
+             controller.read(req.bodyAsBytes());
+            return "Success";
+        });
+
+
         // Admin Group for Test -145562622
         get("/testMessage", (req, res) -> {
-            controller.send("-145562622","test message");
+            controller.send("test message","-145562622");
             return "The message was sent for Admin Group";
         });
     }
