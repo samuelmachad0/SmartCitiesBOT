@@ -69,10 +69,10 @@ set CMD_LINE_ARGS=%$
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\spark-heroku.jar;%APP_HOME%\lib\spark-core-2.1.jar;%APP_HOME%\lib\spark-template-mustache-1.0.0.jar;%APP_HOME%\lib\java-telegram-bot-api-2.1.1.jar;%APP_HOME%\lib\json-20141113.jar;%APP_HOME%\lib\slf4j-api-1.7.7.jar;%APP_HOME%\lib\slf4j-simple-1.7.7.jar;%APP_HOME%\lib\jetty-server-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-webapp-9.0.2.v20130417.jar;%APP_HOME%\lib\compiler-0.8.15.jar;%APP_HOME%\lib\logging-interceptor-3.3.1.jar;%APP_HOME%\lib\gson-2.6.2.jar;%APP_HOME%\lib\okhttp-3.3.1.jar;%APP_HOME%\lib\guava-16.0.1.jar;%APP_HOME%\lib\okio-1.8.0.jar;%APP_HOME%\lib\javax.servlet-3.0.0.v201112011016.jar;%APP_HOME%\lib\jetty-http-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-io-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-xml-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-servlet-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-util-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-security-9.0.2.v20130417.jar
+set CLASSPATH=%APP_HOME%\lib\SmartCitiesBOT.jar;%APP_HOME%\lib\spark-core-2.1.jar;%APP_HOME%\lib\spark-template-mustache-1.0.0.jar;%APP_HOME%\lib\java-telegram-bot-api-2.1.1.jar;%APP_HOME%\lib\json-20141113.jar;%APP_HOME%\lib\slf4j-api-1.7.7.jar;%APP_HOME%\lib\slf4j-simple-1.7.7.jar;%APP_HOME%\lib\jetty-server-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-webapp-9.0.2.v20130417.jar;%APP_HOME%\lib\compiler-0.8.15.jar;%APP_HOME%\lib\logging-interceptor-3.3.1.jar;%APP_HOME%\lib\gson-2.6.2.jar;%APP_HOME%\lib\okhttp-3.3.1.jar;%APP_HOME%\lib\guava-16.0.1.jar;%APP_HOME%\lib\okio-1.8.0.jar;%APP_HOME%\lib\javax.servlet-3.0.0.v201112011016.jar;%APP_HOME%\lib\jetty-http-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-io-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-xml-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-servlet-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-util-9.0.2.v20130417.jar;%APP_HOME%\lib\jetty-security-9.0.2.v20130417.jar
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" hello.MainServer %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" core.MainServer %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
